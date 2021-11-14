@@ -12,6 +12,6 @@ class LocalGameClient:
     print("[Running in local mode]")
     game_message: GameMessage = GameMessage(
       tick=1, payload=Question(
-        totems=[TotemQuestion(shape=random.choice("IJLOSTZ")) for _ in range(512)])
+        totems=[TotemQuestion(shape=random.choice("IJLOSTZ")) for _ in range(128)])
       )
     self.solver.get_answer(game_message)
