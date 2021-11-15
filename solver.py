@@ -88,7 +88,7 @@ class Board:
         """
     compte le nombres de fois que la pièce apparait dans le payload
     """
-        self.shapes = {k: 0 for k in "IJLOSTZ"}
+        self.shapes = {k: 0 for k in "SZTLJOI"}
         while payload:
             self.shapes[payload.pop().shape] += 1
 
